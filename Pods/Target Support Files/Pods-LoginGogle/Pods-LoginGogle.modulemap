@@ -1,0 +1,6 @@
+framework module Pods_LoginGogle {
+  umbrella header "Pods-LoginGogle-umbrella.h"
+
+  export *
+  module * { export * }
+}

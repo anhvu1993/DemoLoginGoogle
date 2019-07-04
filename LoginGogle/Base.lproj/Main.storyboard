@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LoginGogle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyF-OR-3yq">
+                                <rect key="frame" x="108" y="288" width="141" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.77956416070000001" blue="0.77495592089999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="SignIn Google"/>
+                                <connections>
+                                    <action selector="SignInWithGoogle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NaW-QR-ysB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ueq-bF-OWZ">
+                                <rect key="frame" x="88" y="351" width="180" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.77956416070000001" blue="0.77495592089999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="SignOutWithGoogle"/>
+                                <connections>
+                                    <action selector="signOuttWithGoogle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aL2-Uo-OP5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eyF-OR-3yq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="268" id="EjA-5p-fF6"/>
+                            <constraint firstItem="Ueq-bF-OWZ" firstAttribute="top" secondItem="eyF-OR-3yq" secondAttribute="bottom" constant="33" id="PPe-tr-zrx"/>
+                            <constraint firstItem="eyF-OR-3yq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="108" id="Skx-e1-mAS"/>
+                            <constraint firstItem="Ueq-bF-OWZ" firstAttribute="centerX" secondItem="eyF-OR-3yq" secondAttribute="centerX" id="juV-jN-YaD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eyF-OR-3yq" secondAttribute="trailing" constant="126" id="qjV-bh-C3S"/>
+                            <constraint firstItem="Ueq-bF-OWZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="88" id="xKQ-Yi-OT0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="showSignIn" destination="eyF-OR-3yq" id="tBl-Uc-HaS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-214" y="-24"/>
+        </scene>
+    </scenes>
+</document>
